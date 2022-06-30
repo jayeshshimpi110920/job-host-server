@@ -31,6 +31,13 @@ app.get("/",(req,res)=>{
     res.json("server start..!!!");
 })
 
+
+app.get("/all",(req,res)=>{
+    User.find({},(err,user)=>{
+        res.send(user);
+    })
+})
+
 app.listen(port, () => {
     console.log("BE started at port 9002")
 })
