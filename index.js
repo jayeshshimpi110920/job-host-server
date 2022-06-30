@@ -31,11 +31,6 @@ app.get("/",(req,res)=>{
     res.json("server start..!!!");
 })
 
-app.get("/login",(req,res)=>{
-    res.json("login here from index.js");
-})
-
-
 app.listen(port, () => {
     console.log("BE started at port 9002")
 })
