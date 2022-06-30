@@ -34,7 +34,7 @@ app.get("/",(req,res)=>{
 
 app.get("/all",(req,res)=>{
     User.find({},(err,user)=>{
-        res.send(user);
+        res.send({user:user});
     })
 })
 
